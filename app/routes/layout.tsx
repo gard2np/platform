@@ -12,7 +12,7 @@ const Layout: React.FC = () => {
       <header className="fixed top-0 w-full h-14 bg-gray-900 text-white flex items-center shadow-md z-50">
         <div className="fixed left-5">
           <Link to="/">
-          <img src="public/00123.png" alt="logo" className="w-10 h-10" />
+          <img src="/00123.png" alt="logo" className="w-10 h-10" />
           </Link>
         </div>
         <div className="fixed left-20">
@@ -28,7 +28,7 @@ const Layout: React.FC = () => {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     to="/"
                   >
-                    <img src="public/11123.png" alt="logo" className="h-16 w-16" />
+                    <img src="/11123.png" alt="logo" className="h-16 w-16" />
                     <div className="mb-2 mt-4 text-lg font-medium">
                       용해용
                     </div>
