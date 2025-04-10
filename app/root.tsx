@@ -25,10 +25,17 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="명리학 학습 플랫폼 용해용용" />
+        <meta property="og:title" content="용해용" />
+        <meta property="og:description" content="명리학 학습 플랫폼 용해용용" />
+        <meta property="og:image" content="https://your-domain.com/og-image.png" />
+        <meta property="og:url" content="https://your-domain.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>용해용</title>
         <Meta />
         <Links />
       </head>
