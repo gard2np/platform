@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { oxQuizData } from "../data/oxQuizData";
-import { Card } from "../components/ui/card";
+import { Card, CardFooter } from "../components/ui/card"; 
 import { Button } from "../components/ui/button";
 
 const OxQuiz: React.FC = () => {
@@ -43,8 +43,8 @@ const OxQuiz: React.FC = () => {
 
         {!showResult ? (
           <div className="flex justify-center gap-6">
-            <Button className="bg-green-600 text-white px-8 py-2" onClick={() => handleAnswer(true)}>O</Button>
-            <Button className="bg-red-600 text-white px-8 py-2" onClick={() => handleAnswer(false)}>X</Button>
+            <Button className="bg-gray-400 text-white px-8 py-2" onClick={() => handleAnswer(true)}>O</Button>
+            <Button className="bg-teal-400 text-white px-8 py-2" onClick={() => handleAnswer(false)}>X</Button>
           </div>
         ) : (
           <div className="text-center">
@@ -62,7 +62,13 @@ const OxQuiz: React.FC = () => {
 
         <p className="mt-8 text-sm text-gray-500 text-center">현재 점수: {score}</p>
       </Card>
+      <div className="p-4 items-center text-center text-gray-500">
+      <p className="text-xs text-gray-500 mt-6">
+        <CardFooter>© 2025 사주 읽는 치히로 All rights reserved.</CardFooter>
+      </p>
+      </div>
     </div>
+    
   );
 };
 

@@ -12,7 +12,6 @@ const Layout: React.FC = () => {
             <Button variant="outline" className="ml-8 bg-gray-100 text-black">MENU OPEN</Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56">
-            <DropdownMenuLabel className="font-bold">사주 읽는 치히로</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <Link to="/"><DropdownMenuItem>홈</DropdownMenuItem></Link>
