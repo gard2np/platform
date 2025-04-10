@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardTitle, Card } from '~/components/ui/card';
+import { CardTitle, Card, CardFooter } from '~/components/ui/card';
 
 const Quiz: React.FC = () => {
   return (
@@ -10,6 +10,11 @@ const Quiz: React.FC = () => {
           <p>정식 서비스는 2025년 하반기 제공 예정입니다.</p>
         </CardTitle>
       </Card>
+      <div className="p-4 items-center text-center text-gray-500">
+        <p className="text-xs text-gray-500 mt-6">
+          <CardFooter>© 2025 사주 읽는 치히로 All rights reserved.</CardFooter>
+        </p>
+      </div>
     </div>
   );
 };

@@ -24,13 +24,13 @@ export interface OxQuizItem {
       id: "q3",
       question: "戊土는 癸水와 합하여 물을 낳는다.",
       answer: false,
-      explanation: "무계합화화 입니다. 병신합화수죠죠.",
+      explanation: "무계합화화 입니다. 병신합화수죠.",
     },
     {
         id: "q4",
         question: "음과 양은 고정되어있는 것이 아니다.",
         answer: true,
-        explanation: "음과 양은 고정되어있는 것이 아니라 변화하는 것입니다. 예를 들면 끓는물은 화로불과 비교하면 음이지만, 얼음물과 비교하면 양입니다.",
+        explanation: "음과 양은 고정되어있는 것이 아니라 변화하는 것입니다. 예를 들면 을목은 갑목과 비교하면 음이지만, 갑을과 인묘를 비교했을 때는 양이 됩니다.",
     },
     {
         id: "q5",
