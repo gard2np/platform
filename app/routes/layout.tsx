@@ -38,13 +38,13 @@ const Layout: React.FC = () => {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem to="/docs" title="소개">
+              <ListItem to="/" title="소개">
                 아직 작성되지 않았습니다.
               </ListItem>
-              <ListItem to="/docs/installation" title="사용법">
+              <ListItem to="/" title="사용법">
                 아직 작성되지 않았습니다.
               </ListItem>
-              <ListItem to="/docs/primitives/typography" title="연락처">
+              <ListItem to="/" title="연락처">
                 peal9@naver.com
               </ListItem>
                 </ul>
