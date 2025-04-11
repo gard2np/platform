@@ -6,5 +6,6 @@ export default [
     route("jjk", "routes/jjk.tsx"), // 지장간 암기 도우미 (`/jjk`)
     route("ss", "routes/ss.tsx"), // 십신 암기 도우미 (`/ss`)
     route("ox", "routes/oxquiz.tsx"), // 십신 암기 도우미 (`/ss`)
+    route("sky", "routes/skyquiz.tsx"), // 십신 암기 도우미 (`/ss`)
   ])
 ] satisfies RouteConfig;

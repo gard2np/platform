@@ -30,10 +30,10 @@ const Layout: React.FC = () => {
                   >
                     <img src="/11123.png" alt="logo" className="h-16 w-16" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      용해용
+                      용해
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      명리학 학습을 스마트하게 도와주는 플랫폼 서비스입니다.
+                      스마트 명리학 학습 플랫폼
                     </p>
                   </Link>
                 </NavigationMenuLink>
@@ -56,7 +56,10 @@ const Layout: React.FC = () => {
                 
                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <ListItem to="/ox" title="OX Quiz">  
-                  명리학 전반의 지식에 대한 퀴즈를 풀어보세요.
+                  명리학 전반에 대한 퀴즈를 풀어보세요.
+                </ListItem>
+                <ListItem to="/sky" title="4지선다 Quiz">
+                  조금 더 난이도를 올려보세요.
                 </ListItem>
                 </ul>
               </NavigationMenuContent>
@@ -72,7 +75,7 @@ const Layout: React.FC = () => {
                   </li>  
                   <li>
                     <ListItem to="/jjk" title="지장간 암기 도우미">
-                      지장간은 입체적인 해석을 위해 암기해두면 아주 유유용합니다.
+                      지장간은 명식의 입체적인 해석을 위해 암기해두면 아주 유용합니다.
                     </ListItem>
                   </li>
                   

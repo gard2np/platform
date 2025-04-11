@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="description" content="명리학 학습 플랫폼 용해용" />
         <meta property="og:title" content="용해용" />
         <meta property="og:description" content="명리학 학습 플랫폼 용해용" />
-        <title>용해용</title>
+        <title>용해</title>
         <Meta />
         <Links />
       </head>
