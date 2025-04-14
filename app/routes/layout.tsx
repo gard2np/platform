@@ -1,9 +1,10 @@
 import React from "react";
 import { href, Link, Outlet } from "react-router";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuItem, DropdownMenuGroup, DropdownMenuSeparator, DropdownMenuLabel } from "~/components/ui/dropdown-menu";
-import { Button } from "~/components/ui/button";
+import { Button } from "../components/ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink  } from "~/components/ui/navigation-menu";
 import { cn } from "~/lib/utils";
+import { CalendarDays, Handshake, NotebookPen, ThumbsUp, UserRoundPen } from "lucide-react";
 
 const Layout: React.FC = () => {
   return (
@@ -82,6 +83,20 @@ const Layout: React.FC = () => {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-white font-bold bg-gray-900 mr-1">커뮤니티</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <li>
+                    <ListItem to="/community" title="커뮤니티">
+                      커뮤니티 기능을 활용하여 도반들과 함께 성장하세요.
+                    </ListItem>
+                  </li>  
+                  
+                  
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
             
           </NavigationMenuList>
         </NavigationMenu>
@@ -92,6 +107,16 @@ const Layout: React.FC = () => {
       <main className="flex-grow mt-14">
         <Outlet /> {/* 여기에 하위 페이지들이 렌더링됨 */}
       </main>
+      <footer>
+        <div className="fixed bottom-0 w-full h-14 bg-gray-900 justify-center flex items-center grid grid-cols-5 gap-2 pr-5 pl-5">
+        <Button variant="custom">용해<ThumbsUp /></Button>
+        <Button variant="custom">학습<NotebookPen /></Button>
+        <Button variant="custom">사주<CalendarDays /></Button>
+        <Button variant="custom">소통<Handshake /></Button>
+        <Button variant="custom">설정<UserRoundPen /></Button>
+          
+        </div>
+      </footer>
     </div>
   );
 };

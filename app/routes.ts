@@ -7,5 +7,6 @@ export default [
     route("ss", "routes/ss.tsx"), // 십신 암기 도우미 (`/ss`)
     route("ox", "routes/oxquiz.tsx"), // 십신 암기 도우미 (`/ss`)
     route("sky", "routes/skyquiz.tsx"), // 십신 암기 도우미 (`/ss`)
+    route("community", "routes/community.tsx"), // 커뮤니티 (`/community`)
   ])
 ] satisfies RouteConfig;
