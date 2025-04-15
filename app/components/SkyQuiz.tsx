@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { multiChoiceQuizList, type MultiChoiceQuiz } from "../data/mtQuizData";
 import { Button } from "../components/ui/button";
-import { Card, CardFooter } from "./ui/card";
+import { Card } from "./ui/card";
 
 interface ShuffledQuiz {
   id: string;
@@ -111,11 +111,6 @@ const MultipleChoiceQuiz: React.FC = () => {
         </Button>
       )}
     </Card>
-    <div className="p-4 items-center text-center text-gray-500">
-      <p className="text-xs text-gray-500 mt-6">
-        <CardFooter>© 2025 사주 읽는 치히로 All rights reserved.</CardFooter>
-      </p>
-      </div>
     </div>
   );
 };

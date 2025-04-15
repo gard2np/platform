@@ -15,7 +15,7 @@ const Quiz: React.FC = () => {
               01. 지장간 암기
           </Button>
           </Link>
-          <p className="text-gray-400 text-lg font-bold mt-2">클릭하세요</p>
+          <p className="text-gray-400 text-lg font-bold mt-2">버튼을 클릭하세요</p>
           <p className="text-gray-800 text-sm mt-2 w-85 text-center">지장간 암기 도우미입니다.</p>
           </div>
           <Separator className="w-full mt-10 mb-10" />
@@ -25,7 +25,7 @@ const Quiz: React.FC = () => {
               02. 십신 암기
           </Button>
           </Link>
-          <p className="text-gray-400 text-lg font-bold mt-2">클릭하세요</p>
+          <p className="text-gray-400 text-lg font-bold mt-2">버튼을 클릭하세요</p>
           <p className="text-gray-800 text-sm mt-2 w-85 text-center">십신 암기 도우미입니다.</p>
           </div>
           <Separator className="w-full mt-10 mb-10" />
@@ -35,8 +35,8 @@ const Quiz: React.FC = () => {
               03. OX 퀴즈
           </Button>
           </Link>
-          <p className="text-gray-400 text-lg font-bold mt-2">클릭하세요</p>
-          <p className="text-gray-800 text-sm mt-2 w-85 text-center">십신 암기 도우미입니다.</p>
+          <p className="text-gray-400 text-lg font-bold mt-2">버튼을 클릭하세요</p>
+          <p className="text-gray-800 text-sm mt-2 w-85 text-center">OX 퀴즈 입니다.</p>
           </div>
           <Separator className="w-full mt-10 mb-10" />
           <div className="flex flex-col items-center justify-center mt-10">
@@ -45,8 +45,8 @@ const Quiz: React.FC = () => {
               04. 4지선다 퀴즈
           </Button>
           </Link>
-          <p className="text-gray-400 text-lg font-bold mt-2">클릭하세요</p>
-          <p className="text-gray-800 text-sm mt-2 w-85 text-center">십신 암기 도우미입니다.</p>
+          <p className="text-gray-400 text-lg font-bold mt-2">버튼을 클릭하세요</p>
+          <p className="text-gray-800 text-sm mt-2 w-85 text-center">4지선다 퀴즈 입니다.</p>
           </div>
         </CardTitle>
       </Card>

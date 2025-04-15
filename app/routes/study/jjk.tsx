@@ -66,11 +66,6 @@ const JJK: React.FC = () => {
           </div>
         )}
       </Card>
-      <div className="p-4 items-center text-center text-gray-500">
-      <p className="text-xs text-gray-500 mt-6">
-        <CardFooter>© 2025 사주 읽는 치히로 All rights reserved.</CardFooter>
-      </p>
-      </div>
     </div>
   );
 };
