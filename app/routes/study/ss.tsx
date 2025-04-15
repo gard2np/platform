@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import SScomponent from "../components/SScomponenet";
-import ResultsComponent from "../components/ResultsComponent";
+import SScomponent from "../../components/SScomponenet";
+import ResultsComponent from "../../components/ResultsComponent";
 
 interface IncorrectQuestion {
   문제: string;

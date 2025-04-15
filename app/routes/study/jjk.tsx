@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { heavenlyStems, earthlyBranches, hiddenStems } from '~/data/stems';
-import BranchCard from '../components/BranchCard';
-import Slot from '../components/Slot';
-import StemButton from '../components/StemButton';
-import StemsTable from '../components/Stemstable';
-import { Button } from "../components/ui/button";
-import { CardTitle, CardFooter, Card } from "../components/ui/card";
+import BranchCard from '../../components/BranchCard';
+import Slot from '../../components/Slot';
+import StemButton from '../../components/StemButton';
+import StemsTable from '../../components/Stemstable';
+import { Button } from "../../components/ui/button";
+import { CardTitle, CardFooter, Card } from "../../components/ui/card";
 
 const getRandomBranch = () => earthlyBranches[Math.floor(Math.random() * earthlyBranches.length)];
 

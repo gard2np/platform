@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '~/components/ui/button';
-import { CardTitle, Card, CardFooter } from '~/components/ui/card';
+import { CardTitle, Card } from '~/components/ui/card';
 
 const Quiz: React.FC = () => {
   return (
@@ -23,11 +23,6 @@ const Quiz: React.FC = () => {
           </div>
         </CardTitle>
       </Card>
-      <div className="p-4 items-center text-center text-gray-500">
-        <p className="text-xs text-gray-500 mt-6">
-          <CardFooter>© 2025 사주 읽는 치히로 All rights reserved.</CardFooter>
-        </p>
-      </div>
     </div>
   );
 };
