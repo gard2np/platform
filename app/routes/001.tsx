@@ -1,75 +1,30 @@
-// app/components/OxQuiz.tsx
+import React from 'react';
+import { Button } from '~/components/ui/button';
+import { CardTitle, Card } from '~/components/ui/card';
 
-import { useState } from "react";
-import { oxQuizData } from "../data/oxQuizData";
-import { Card, CardFooter } from "../components/ui/card"; 
-import { Button } from "../components/ui/button";
-
-const OxQuiz: React.FC = () => {
-  const [index, setIndex] = useState(0);
-  const [showResult, setShowResult] = useState(false);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const [score, setScore] = useState(0);
-
-  const current = oxQuizData[index];
-
-  const handleAnswer = (userAnswer: boolean) => {
-    const correct = userAnswer === current.answer;
-    if (correct) setScore((prev) => prev + 1);
-    setIsCorrect(correct);
-    setShowResult(true);
-  };
-
-  const handleNext = () => {
-    setIsCorrect(null);
-    setShowResult(false);
-    if (index < oxQuizData.length - 1) {
-      setIndex(index + 1);
-    } else {
-      alert(`퀴즈 종료! 점수: ${score} / ${oxQuizData.length}`);
-      setIndex(0);
-      setScore(0);
-    }
-  };
-
+const Quiz: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 bg-gray-50 h-[89vh]">
-      <Card className="w-full max-w-xl p-6">
-        <h2 className="text-xl font-bold mb-4 text-center">OX 퀴즈</h2>
-
-        <p className="text-lg font-semibold text-center mb-6">
-          문제 {index + 1}. {current.question}
-        </p>
-
-        {!showResult ? (
-          <div className="flex justify-center gap-6">
-            <Button className="bg-gray-400 text-white px-8 py-2" onClick={() => handleAnswer(true)}>O</Button>
-            <Button className="bg-teal-400 text-white px-8 py-2" onClick={() => handleAnswer(false)}>X</Button>
+      <Card className="w-full max-w-lg p-6 shadow-lg items-center">
+        <CardTitle className="w-full mt-4 mb-4 text-xl font-bold text-center">
+          <div className="flex flex-col items-center justify-center">
+          <Button variant="outline" className="text-purple-700 font-bold text-xl rounded-full">
+              01
+          </Button>
+          <p className="text-gray-400 text-lg font-bold mt-2">명리학 공부를 스마트하게</p>
+          <p className="text-gray-800 text-sm mt-2 w-85 text-center mb-14">독학하며 겪은 어려움을 바탕으로 만든 서비스입니다. 내가 잘 알고 있는걸까? 실력은 얼마나 되는걸까?<br/> "용해"를 통해서 점검해보세요.</p>
           </div>
-        ) : (
-          <div className="text-center">
-            <p className={`text-lg font-bold mt-4 ${isCorrect ? "text-green-600" : "text-red-600"}`}>
-              {isCorrect ? "정답입니다! ✅" : "틀렸습니다 ❌"}
-            </p>
-            {current.explanation && (
-              <p className="text-sm text-gray-600 mt-2">※ 해설: {current.explanation}</p>
-            )}
-            <Button className="mt-6 bg-blue-500 text-white px-6 py-2" onClick={handleNext}>
-              다음 문제
-            </Button>
+          <div className="flex flex-col items-center justify-center">
+          <Button variant="outline" className="text-purple-700 font-bold text-xl rounded-full">
+              02
+          </Button>
+          <p className="text-gray-400 text-lg font-bold mt-2">현업 술사가 운영합니다.</p>
+          <p className="text-gray-800 text-sm mt-2 w-85 text-center">실전 풀이 사례를 만나보세요. 커뮤니티 기능을 활용하여 도반들과 함께 성장하세요.</p>
           </div>
-        )}
-
-        <p className="mt-8 text-sm text-gray-500 text-center">현재 점수: {score}</p>
+        </CardTitle>
       </Card>
-      <div className="p-4 items-center text-center text-gray-500">
-      <p className="text-xs text-gray-500 mt-6">
-        <CardFooter>© 2025 사주 읽는 치히로 All rights reserved.</CardFooter>
-      </p>
-      </div>
     </div>
-    
   );
 };
 
-export default OxQuiz;
+export default Quiz;

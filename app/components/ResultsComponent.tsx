@@ -31,7 +31,7 @@ const ResultsComponent: React.FC<ResultsComponentProps> = ({ score, totalQuestio
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4 h-[89vh]">
       <Card className="w-full max-w-lg p-6 shadow-lg">
         <h1 className="text-2xl font-bold text-center text-gray-800">퀴즈 결과</h1>
         <p className="text-lg text-center text-gray-700 mt-2">
