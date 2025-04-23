@@ -67,7 +67,7 @@ const MultipleChoiceQuiz: React.FC = () => {
   if (!quiz) return null;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50">
+    <div className="flex flex-col items-center justify-center p-4 bg-gray-50 h-[89vh]">
       <Card className="w-full max-w-xl p-6">
       <h2 className="text-xl font-bold mb-4 text-center">
         [{currentIndex + 1}/{total}] {quiz.question}

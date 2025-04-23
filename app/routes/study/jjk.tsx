@@ -19,7 +19,7 @@ const JJK: React.FC = () => {
   const correctAnswer = hiddenStems[branch];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50">
+    <div className="flex flex-col items-center justify-center p-4 bg-gray-50 h-[89vh]">
       <Card className="w-full max-w-lg p-6 shadow-lg items-center">
       <CardTitle className="w-full mt-4 mb-4 text-2xl font-bold text-center">
         지장간 암기 도우미
