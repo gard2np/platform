@@ -4,7 +4,7 @@ import { CardTitle, Card } from '~/components/ui/card';
 
 const Quiz: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50">
+    <div className="flex flex-col items-center justify-center p-4 bg-gray-50 h-[89vh]">
       <Card className="w-full max-w-lg p-6 shadow-lg items-center">
         <CardTitle className="w-full mt-4 mb-4 text-xl font-bold text-center">
           <div className="flex flex-col items-center justify-center">
