@@ -149,7 +149,7 @@ const SS: React.FC<QuizComponentProps> = ({ onFinish }) => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50">
+        <div className="flex flex-col items-center justify-center p-4 bg-gray-50 h-[89vh]">
             <Card className="w-full max-w-lg p-6 shadow-lg">
                 <h1 className="text-2xl font-bold text-center text-gray-800">십신 암기 도우미</h1>
                 <p className="text-gray-600 text-center mt-2">[{questionNumber}/{totalQuestions}]</p>
@@ -177,10 +177,6 @@ const SS: React.FC<QuizComponentProps> = ({ onFinish }) => {
                 <p className="text-md text-gray-700 mt-4 text-center">{message}</p>
                 <p className="text-md text-gray-700 mt-2 text-center">점수: {score}</p>
             </Card>
-
-            <p className="text-xs text-gray-500 mt-6">
-                © 2025 사주 읽는 치히로 All Rights Reserved.
-            </p>
         </div>
     );
 };
